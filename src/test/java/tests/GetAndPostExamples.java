@@ -16,7 +16,7 @@ public class GetAndPostExamples {
 	
 	@Test
 	public void testGet() {
-		//base URL comment
+		//base URL comment space
 		baseURI = "https://reqres.in/api";
 		
 		given().
