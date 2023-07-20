@@ -1,11 +1,35 @@
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-<xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/"   
-           schemaLocation="http://schemas.xmlsoap.org/soap/envelope/"/>
-  <xs:element name="AddResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element type="xs:byte" name="AddResult"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+<!-- <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema"> -->
+<!-- <xs:import namespace="http://www.w3.org/2001/XMLSchema"    -->
+<!--            schemaLocation="http://schemas.xmlsoap.org/soap/envelope/"/> -->
+<!--   <xs:element name="AddResponse"> -->
+<!--     <xs:complexType> -->
+<!--       <xs:sequence> -->
+<!--         <xs:element type="xs:byte" name="AddResult"/> -->
+<!--       </xs:sequence> -->
+<!--     </xs:complexType> -->
+<!--   </xs:element> -->
+<!-- </xs:schema> -->
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="soap12:Envelope">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="soap12:Body">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AddResponse">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="AddResult"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>
+

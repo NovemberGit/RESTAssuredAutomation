@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\bharg\AppData\Local\Temp\testng-eclipse-2003918971\testng-customsuite.xml</span>
+                    <span>C:\Users\bharg\AppData\Local\Temp\testng-eclipse-1272556843\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,23 +129,18 @@
                   <a name="SchemaValidation">
                   </a> <!-- SchemaValidation -->
                   <span class="method-name">SchemaValidation</span>
-                  <div class="stack-trace">org.xml.sax.SAXParseException; systemId: http://schemas.xmlsoap.org/soap/envelope/; lineNumber: 1; columnNumber: 1; Premature end of file.
+                  <div class="stack-trace">org.xml.sax.SAXParseException; lineNumber: 15; columnNumber: 40; s4s-att-invalid-value: Invalid attribute value for &apos;name&apos; in element &apos;element&apos;. Recorded reason: cvc-datatype-valid.1.2.1: &apos;soap12:Envelope&apos; is not a valid value for &apos;NCName&apos;.
 	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
-	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1013)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:541)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:640)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2226)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.resolveSchema(XSDHandler.java:2128)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.constructTrees(XSDHandler.java:1049)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:652)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4253)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaError(XSDHandler.java:4236)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker.reportSchemaError(XSAttributeChecker.java:1573)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker.checkAttributes(XSAttributeChecker.java:1140)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker.checkAttributes(XSAttributeChecker.java:960)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDElementTraverser.traverseGlobal(XSDElementTraverser.java:241)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.traverseSchemas(XSDHandler.java:1482)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:662)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:576)
 	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:542)
@@ -221,7 +216,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\bharg\AppData\Local\Temp\testng-eclipse-2003918971\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\bharg\AppData\Local\Temp\testng-eclipse-1272556843\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -278,7 +273,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'SchemaValidation')
 data.setCell(0, 2, 'tests.XMLSchemaValidation')
-data.setCell(0, 3, 1288);
+data.setCell(0, 3, 1251);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
